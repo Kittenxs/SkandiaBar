@@ -1,0 +1,54 @@
+/* SkandiaBar */
+/* Kittenxs - https://github.com/Kittenxs/ */
+/* SkandiaBot - https://skandiabot.com */
+.skandiabars-wrapper {
+	position: relative
+}
+.skandiabars {
+	-ms-overflow: hidden;
+	overflow: hidden
+}
+.skandiabars::-webkit-scrollbar {
+	width: 0;
+	height: 0
+}
+.skandiabar-x {
+	position: absolute;
+	left: 0;
+	height: 4px;
+	background: #ecf0f1;
+	background: rgba(0, 0, 0, .2);
+	border-radius: 4px
+}
+.skandiabar-x>.scrubber {
+	position: absolute;
+	top: 0;
+	height: 4px;
+	cursor: pointer;
+	background-color: #3498db;
+	border-radius: 4px
+}
+.skandiabar-y {
+	position: absolute;
+	top: 0;
+	width: 4px;
+	background: #ecf0f1;
+	background: rgba(0, 0, 0, .2);
+	border-radius: 4px
+}
+.skandiabar-y>.scrubber {
+	position: absolute;
+	left: 0;
+	width: 4px;
+	cursor: pointer;
+	background-color: #3498db;
+	border-radius: 4px
+}
+ul.skandiabars-x {
+	white-space: nowrap
+}
+@media only screen and (min-device-width :1024px) {
+	.skandiabars, .skandiabars-x, .skandiabars-y {
+		overflow: hidden
+	}
+}
